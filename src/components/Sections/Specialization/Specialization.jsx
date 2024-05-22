@@ -28,10 +28,15 @@ export default function Specialization() {
                     Find by specialisation
                 </Typography>
 
-                <Grid container spacing={{ xs: 1, md: 3 }} mb={5} justifyContent={'center'}>
+                <Grid 
+                container 
+                spacing={{ xs: 1, md: 3 }} 
+                rowSpacing={{xs:2}}
+                mb={5} 
+                justifyContent={'center'}>
 
                     {data.map(item => (
-                        <Grid item xs={4} md={3} key={item.title}>
+                        <Grid item xs={12} md={3} key={item.title}>
                             <IconCard img={item.icon} title={item.title} bgColor={'#FFFFFF'} shadow={true} />
                         </Grid>
                     ))}
